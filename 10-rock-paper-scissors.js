@@ -17,30 +17,30 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     let result = '';
     let computerMove = pickComputerMove();
   
-    if (playerMove === 'Rock') {
-      if (computerMove === 'Rock') {
+    if (playerMove === 'rock') {
+      if (computerMove === 'rock') {
         result = 'Tie.';
-      } else if (computerMove === 'Paper') {
+      } else if (computerMove === 'paper') {
         result = 'You lose.';
       } else {
         result = 'You win.';
       }
     }
   
-    if (playerMove === 'Paper') {
-      if (computerMove === 'Rock') {
+    if (playerMove === 'paper') {
+      if (computerMove === 'rock') {
         result = 'You win.';
-      } else if (computerMove === 'Paper') {
+      } else if (computerMove === 'paper') {
         result = 'Tie.';
       } else {
         result = 'You lose.';
       }
     }
   
-    if (playerMove === 'Scissors') {
-      if (computerMove === 'Rock') {
+    if (playerMove === 'scissors') {
+      if (computerMove === 'rock') {
         result = 'You lose.';
-      } else if (computerMove === 'Paper') {
+      } else if (computerMove === 'paper') {
         result = 'You win.';
       } else {
         result = 'Tie.';
@@ -72,11 +72,11 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     let computerMove = '';
   
     if (randomNumber >= 0 && randomNumber < 1 / 3) {
-      computerMove = 'Rock';
+      computerMove = 'rock';
     } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-      computerMove = 'Paper';
+      computerMove = 'paper';
     } else {
-      computerMove = 'Scissors';
+      computerMove = 'scissors';
     }
   
     return computerMove;
