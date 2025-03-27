@@ -1,5 +1,5 @@
 import {formatCurrency} from '../scripts/utils/money.js';
-import '../data/car.js';
+//import '../data/car.js';
 export function getProduct(productId) {
   let matchingProduct;
   products.forEach((product) => {
