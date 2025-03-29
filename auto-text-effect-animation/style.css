@@ -8,4 +8,5 @@ body{
     align-items: center;
     background-color: salmon;
     font-family: "Permanent Marker", cursive;
+    overflow: hidden;
 }
