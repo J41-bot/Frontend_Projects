@@ -13,3 +13,7 @@ body {
     background-color: salmon;
     font-family: "Permanent Marker", cursive;
 }
+
+.container {
+    text-align: center;
+}
